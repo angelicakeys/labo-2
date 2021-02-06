@@ -10,6 +10,16 @@ Animations de la page Accueil
     0% { transform: translateX(1000px);}
     100% { transform: translateX(0px);}
 }
+
+.principal  {
+    animation: anim-section 1s 1s both cubic-bezier(0,1.08,1,1.17);
+}
+
+@keyframes anim-section {
+    0% { transform: translateY(1000px);}
+    100% { transform: translateY(0px);}
+}
+
 /*
 .animation div:nth-of-type(1){
     animation-delay: 1s;
@@ -35,5 +45,12 @@ $column:5;
 @for $i from 1 through $column {
     .animation div:nth-of-type(#{$i}){
         animation-delay: .5*$i#{s};
+    }
+}
+
+$titre:2;
+@for $i from 1 through $titre {
+    .principal :nth-of-type(#{$i}){
+        animation-delay: .2*$i#{s};
     }
 }

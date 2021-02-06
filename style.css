@@ -25,6 +25,19 @@ Animations de la page Accueil
   }
 }
 
+.principal {
+  animation: anim-section 1s 1s both cubic-bezier(0, 1.08, 1, 1.17);
+}
+
+@keyframes anim-section {
+  0% {
+    transform: translateY(1000px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 /*
 .animation div:nth-of-type(1){
     animation-delay: 1s;
@@ -66,6 +79,14 @@ Animations de la page Accueil
   animation-delay: 2.5s;
 }
 
+.principal :nth-of-type(1) {
+  animation-delay: 0.2s;
+}
+
+.principal :nth-of-type(2) {
+  animation-delay: 0.4s;
+}
+
 /* ---------------------------------------
 layout
 ------------------------------------------ */
@@ -84,8 +105,8 @@ body {
 
 body::after {
   content: "";
-  clip-path: polygon(0 0, 80% 0, 50% 100%, 0 100%);
-  background-color: #181a1d;
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  background-color: #4ac1c5;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -199,7 +220,7 @@ p {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: blue;
+  background-color: #fdb15d;
 }
 
 .annonce1 {
@@ -241,5 +262,11 @@ p {
 
 .principal h3 {
   padding: 1rem 0 1rem 0;
+}
+
+.principal p {
+  color: #f1506e;
+  font-size: 3rem;
+  margin: 2rem;
 }
 /*# sourceMappingURL=style.css.map */

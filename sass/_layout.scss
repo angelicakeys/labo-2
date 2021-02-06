@@ -16,7 +16,8 @@ body {
 
 body::after {
     content : "";
-    clip-path: polygon(0 0, 80% 0 , 50% 100% , 0 100%);
+    //clip-path: polygon(0 0, 80% 0 , 50% 100% , 0 100%); PROF POLYGON DIAGONAL
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
     //background-color: rgb(43, 71, 233);
     background-color: couleur(primaire);
     position: absolute;
@@ -123,7 +124,8 @@ p {
        width: 50px;
        height: 50px;
        border-radius: 50%;
-        background-color:blue;
+       //background-color:rgb(209, 96, 185);
+       background-color: rgb(253, 177, 93);
     }
 
     }
@@ -165,5 +167,12 @@ p {
     h3{
         padding: 1rem 0 1rem 0;
     }
+
     
+    p{
+        color: rgb(241, 80, 110);
+        font-size: 3rem;
+        margin: 2rem;
+    }
+        
 }
